@@ -1,0 +1,55 @@
+body {
+  background-color: #30475e;
+  font-family: monospace;
+  max-width: 100%;
+  width: 2000px;
+}
+
+.title {
+  color: #cfd3ce;
+  padding: 10px;
+  font-size: 20px;
+}
+
+.search-bar {
+  max-width: 200px;
+}
+
+.large-weather-icon {
+  color: #eebb4d;
+  font-size: 1000%;
+}
+
+.small-weather-icon {
+  color: #eebb4d;
+  font-size: 500%;
+  margin: 20;
+}
+
+.day-text {
+  font-size: 20px;
+  color: #cfd3ce;
+  text-align: center;
+}
+
+.city-text {
+  color: #839b97;
+}
+
+.day-text-large {
+  color: #cfd3ce;
+  display: block;
+}
+
+.degree,
+.percent,
+.conditions {
+  color: #cfd3ce;
+  padding: 5px;
+}
+
+.celsiusButton,
+.fahrenheitButton {
+  background-color: #71757a;
+  border: 1px solid transparent;
+  border-radius: 5px;
