@@ -67,3 +67,7 @@ a:link,
 a:visited {
   color: #cfd3ce;
 }
+
+a:hover {
+  color: #eebb4d;
+}
