@@ -20,10 +20,6 @@ body {
   padding-bottom: 10px;
 }
 
-.search-bar {
-  padding-top: 0px;
-}
-
 .large-weather-icon {
   color: #eebb4d;
   font-size: 1000%;
@@ -66,6 +62,8 @@ body {
   border-radius: 5px;
 }
 
-.by-line {
-  padding-top: 10px;
+.by-line,
+a:link,
+a:visited {
+  color: #cfd3ce;
 }
