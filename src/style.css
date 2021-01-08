@@ -5,14 +5,14 @@ body {
   width: 2000px;
 }
 
-.title {
+.currentLocationButtonLabel {
   color: #cfd3ce;
-  padding: 10px;
   font-size: 20px;
+  padding-bottom: 10px;
 }
 
 .search-bar {
-  max-width: 200px;
+  padding-top: 20px;
 }
 
 .large-weather-icon {
@@ -34,11 +34,13 @@ body {
 
 .city-text {
   color: #839b97;
+  padding-top: 10px;
 }
 
 .day-text-large {
   color: #cfd3ce;
   display: block;
+  padding-top: 10px;
 }
 
 .degree,
@@ -53,3 +55,8 @@ body {
   background-color: #71757a;
   border: 1px solid transparent;
   border-radius: 5px;
+}
+
+.by-line {
+  padding-top: 10px;
+}
