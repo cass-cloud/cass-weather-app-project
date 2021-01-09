@@ -2,7 +2,7 @@
 function formatDate(date) {
 
 let dayIndex = currentDate.getDay();
-let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday"];
+let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 let day = `${days[dayIndex]}`;
 
 let hour = currentDate.getHours();
