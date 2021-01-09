@@ -4,7 +4,7 @@ body {
 }
 
 .weather-app-wrapper {
-  max-width: 1000px;
+  max-width: 925px;
   margin: 30px auto;
 }
 
@@ -66,6 +66,7 @@ body {
 a:link,
 a:visited {
   color: #cfd3ce;
+  margin: 30px 0 auto;
 }
 
 a:hover {
