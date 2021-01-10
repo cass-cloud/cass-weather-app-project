@@ -39,7 +39,10 @@ body {
 
 .city-text {
   color: #839b97;
+  display: block;
+  font-size: 30px;
   padding-top: 10px;
+  padding-left: 15px;
 }
 
 .day-text-large {
@@ -55,9 +58,10 @@ body {
 }
 
 .degree {
-  padding-left: 20px;
-  padding-top: 5px;
   display: block;
+  font-size: 30px;
+  padding-top: 10px;
+  padding-left: 20px;
 }
 
 .celsiusButton,
