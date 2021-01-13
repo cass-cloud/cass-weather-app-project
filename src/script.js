@@ -45,8 +45,10 @@ let currentTemp = Math.round(response.data.main.temp);
 let cityLocation = response.data.name;
 let heading = document.querySelector("#city-text-1");
 let temperature = document.querySelector("#change-degree-type");
+let descriptionElement = document.querySelector("#weather-description");
 heading.innerHTML = `${cityLocation}`;
 temperature.innerHTML = `${currentTemp}°C`;
+descriptionElement.innerHTML = response.data.weather[0].description;
 }
 
 function showPosition(position) {

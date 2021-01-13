@@ -48,7 +48,17 @@ body {
 .day-text-large {
   color: #cfd3ce;
   display: block;
-  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-top: 5px;
+  margin: 0px;
+}
+
+.weatherDescriptionElement {
+  color: #cfd3ce;
+  display: block;
+  padding-bottom: 5px;
+  padding-left: 15px;
+  margin: 0px;
 }
 
 .degree,
