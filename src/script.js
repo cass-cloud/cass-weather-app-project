@@ -24,9 +24,11 @@ function showTemperature(response){
   let heading = document.querySelector("#city-text-1");
   let temperature = document.querySelector("#change-degree-type");
   let descriptionElement = document.querySelector("#weather-description");
+  let windSpeed = document.querySelector("#windSpeedButton")
   heading.innerHTML = `${citySearchName}`;
 temperature.innerHTML = `${currentTemp}°C`;
 descriptionElement.innerHTML = response.data.weather[0].description;
+windSpeed.innerHTML = response.data.wind.speed;
 }
 
 function searching(event) {
@@ -48,9 +50,12 @@ let cityLocation = response.data.name;
 let heading = document.querySelector("#city-text-1");
 let temperature = document.querySelector("#change-degree-type");
 let descriptionElement = document.querySelector("#weather-description");
+let precipitation = document.querySelector("#precipitationButton")
+let windSpeed = document.querySelector("#windSpeedButton")
 heading.innerHTML = `${cityLocation}`;
 temperature.innerHTML = `${currentTemp}°C`;
 descriptionElement.innerHTML = response.data.weather[0].description;
+windSpeed.innerHTML = response.data.wind.speed;
 }
 
 function showPosition(position) {
