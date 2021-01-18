@@ -23,8 +23,12 @@ function showTemperature(response){
   let citySearchName = response.data.name;
   let heading = document.querySelector("#city-text-1");
   let temperature = document.querySelector("#change-degree-type");
+  let largeIconElement = document.querySelector("#large-icon-1")
   let descriptionElement = document.querySelector("#weather-description");
-  let windSpeed = document.querySelector("#windSpeedButton")
+  //let precipitation = document.querySelector("#precipitationButton");
+  let windSpeed = document.querySelector("#windSpeedButton");
+  largeIconElement.setAttribute("src",`http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
+  largeIconElement.setAttribute("alt", response.data.weather[0].description);
   heading.innerHTML = `${citySearchName}`;
 temperature.innerHTML = `${currentTemp}°C`;
 descriptionElement.innerHTML = response.data.weather[0].description;
@@ -51,9 +55,10 @@ let heading = document.querySelector("#city-text-1");
 let temperature = document.querySelector("#change-degree-type");
 let largeIconElement = document.querySelector("#large-icon-1")
 let descriptionElement = document.querySelector("#weather-description");
-let precipitation = document.querySelector("#precipitationButton")
-let windSpeed = document.querySelector("#windSpeedButton")
-largeIconElement.setAttribute("src", 'http://openweathermap.org/img/wn/10n@2x.png');
+//let precipitation = document.querySelector("#precipitationButton");
+let windSpeed = document.querySelector("#windSpeedButton");
+largeIconElement.setAttribute("src",`http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
+largeIconElement.setAttribute("alt", response.data.weather[0].description);
 heading.innerHTML = `${cityLocation}`;
 temperature.innerHTML = `${currentTemp}°C`;
 descriptionElement.innerHTML = response.data.weather[0].description;
