@@ -49,9 +49,11 @@ let currentTemp = Math.round(response.data.main.temp);
 let cityLocation = response.data.name;
 let heading = document.querySelector("#city-text-1");
 let temperature = document.querySelector("#change-degree-type");
+let largeIconElement = document.querySelector("#large-icon-1")
 let descriptionElement = document.querySelector("#weather-description");
 let precipitation = document.querySelector("#precipitationButton")
 let windSpeed = document.querySelector("#windSpeedButton")
+largeIconElement.setAttribute("src", 'http://openweathermap.org/img/wn/10n@2x.png');
 heading.innerHTML = `${cityLocation}`;
 temperature.innerHTML = `${currentTemp}°C`;
 descriptionElement.innerHTML = response.data.weather[0].description;
