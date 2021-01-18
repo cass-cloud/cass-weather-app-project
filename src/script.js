@@ -23,8 +23,10 @@ function showTemperature(response){
   let citySearchName = response.data.name;
   let heading = document.querySelector("#city-text-1");
   let temperature = document.querySelector("#change-degree-type");
+  let descriptionElement = document.querySelector("#weather-description");
   heading.innerHTML = `${citySearchName}`;
 temperature.innerHTML = `${currentTemp}°C`;
+descriptionElement.innerHTML = response.data.weather[0].description;
 }
 
 function searching(event) {
