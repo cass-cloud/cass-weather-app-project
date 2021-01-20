@@ -56,7 +56,7 @@ let heading = document.querySelector("#city-text-1");
 let temperature = document.querySelector("#change-degree-type");
 let largeIconElement = document.querySelector("#large-icon-1")
 let descriptionElement = document.querySelector("#weather-description");
-//let humidity = document.querySelector("#humidityButton");
+let humidity = document.querySelector("#humidityButton");
 let windSpeed = document.querySelector("#windSpeedButton");
 largeIconElement.setAttribute("src",`http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
 largeIconElement.setAttribute("alt", response.data.weather[0].description);
