@@ -81,6 +81,10 @@ body {
   border-radius: 5px;
 }
 
+.by-line {
+  display: block;
+  text-align: center;
+}
 .by-line,
 a:link,
 a:visited {
