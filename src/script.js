@@ -85,9 +85,6 @@ navigator.geolocation.getCurrentPosition(showPosition);
 
 getGeoLocation();
 
-//let currentLocation = document.querySelector("#current-location");
-//currentLocation.addEventListener("click", getGeoLocation); 
-
 let currentDate = new Date();
 let displayDate = document.querySelector("h3.day-text-large");
 displayDate.innerHTML = formatDate(currentDate);
